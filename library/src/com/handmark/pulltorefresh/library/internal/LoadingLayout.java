@@ -32,7 +32,7 @@ import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
+import com.WazaBe.HoloEverywhere.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.handmark.pulltorefresh.library.ILoadingLayout;

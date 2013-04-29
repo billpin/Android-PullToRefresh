@@ -67,6 +67,9 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
 		/**
 		 * If we're not showing the Refreshing view, or the list is empty, the
 		 * the header/footer views won't show so we use the normal method.
+		 * If the list is empty, the scroll function will not scroll since it
+		 * cannot detect the distance to scroll (normally it detects the height/
+		 * width of the list element) and then the refresh listener will not be called
 		 */
 		ListAdapter adapter = mRefreshableView.getAdapter();
 		if (!mListViewExtrasEnabled || !getShowViewWhileRefreshing() || null == adapter || adapter.isEmpty()) {
